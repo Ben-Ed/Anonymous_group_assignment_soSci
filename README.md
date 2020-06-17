@@ -1,6 +1,6 @@
 ![Alt-Text](https://github.com/Ben-Ed/Anonymous_team_assignment_soSci/blob/master/anonymous_assignment.gif)
 
-# Anonymous team assignment for soSci
+# Anonymous group assignment for soSci
 SoSci Survey is an online survey tool to conduct scientific researches. Its customization via inbuild function or manual html and php code allows the user to create complex surveys. While the existing features are sufficient for most basic projects, a certain aspect is missing when it comes to anonymity: Group assignment of the participants without failing to grant anonymity.
 <br></br>
 
