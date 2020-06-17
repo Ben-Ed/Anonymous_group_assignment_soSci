@@ -32,7 +32,7 @@ Keep the following in mind: Every participant has a individual ID, which we call
 ![Alt-Text](https://github.com/Ben-Ed/Anonymous_team_assignment_soSci/blob/master/snowball_assignment.gif)
 
 At the beginning, we check the link the participant used. 
-```php
+```PHP
 $team_id = readGET('r');
 ```
 In those cases where the participant is the first member of the group/project team/company (or on whatever base you want to aggrate), there will be no **r** in the link. We will call this first participant ~~patient~~ **participant zero** The link will look like this
@@ -42,7 +42,7 @@ In those cases where the participant is the first member of the group/project te
 
 <br>Which means, that there is no **team_id** yet for the group of **participant zero**. Therefore, we have to manually assign a **team_id**. The individual **random_personal_id** will be used as the **team_id** for this group. 
 
-```php
+```PHP
 if ($team_id == NULL) {
     $team_id = caseNumber();
 }
@@ -62,7 +62,7 @@ Coming back to our example: Now we know what the workers of each company think a
 
 Simply copy the following code into a php block within your soSci survey. There is also a commented version with explanations and further debugging options, if needed.
 
-```php
+```PHP
 $team_id = readGET('r');
 
 if ($team_id == NULL) {
