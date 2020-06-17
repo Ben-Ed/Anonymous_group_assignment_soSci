@@ -27,6 +27,7 @@ Remember the goals:
 > - Mantaining anomynous group assignment
 > - Using snowball technique to minimize effort
 
+Keep the following in mind: Every participant has a individual ID, which we call **random_personal_ID**, and you can mark survey links with a variable, which we call **r**. Also, soSci has an inbuild feature which let the participants enter email adresses of their collegues, thus sending a email containing the survey link to them. **These email adresses are not saved!**
 <br></br>
   
 
