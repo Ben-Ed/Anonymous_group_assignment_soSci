@@ -51,11 +51,10 @@ replace('%team_id%', $team_id);
 The first participant has now a **team_id**, our team-unique and anonymous ID. Furthermore, every placehoalder %team_id% will be replaced by the true **team_id**. The email type question has a input field, where you can customize the email which will be send by the participants to their colleagues. Within this field, you can now use the following link.
 
 > ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.de/y<span>our_project/r=%team_id%<span>
-
-<br>
+    
+<br></br>
 The following participants, the collegues of *participant zero*, will receive this link via email. As their **r** is the **team_id** of the sender, they can be assigned to one group. If the receiver invites more colleagues, he will send the same link he received. As this goes on, every person in this chain can be assignet to the group they belong to, since **r = team_id**. 
-<br>
-
+<br></br>
 Coming to our example: Now we know what the workers of each company think about their company(aggregated by team_id). However, we neither know who the participants are nor to which company they belong. Although the company name could be asked, too. And most importantly, the workers distributed the survey themselves. 
 
 ## How to use
