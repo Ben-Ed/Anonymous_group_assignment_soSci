@@ -37,7 +37,7 @@ $team_id = readGET('r');
 ```
 In those cases where the participant is the first member of the group/project team/company (or on whatever base you want to aggrate), there will be no **r** in the link. We will call this first participant ~~patient~~ **participant zero** The link will look like this
 
-> ht<span>tps://<span>ww<span>w.<span>soscisurvey.de/your_project<span>
+> ht<span>tps://<span>ww<span>w.<span>soscisurvey.com/your_project<span>
     
 <br></br>
 Which means, that there is no **team_id** yet for the group of **participant zero**. Therefore, we have to manually assign a **team_id**. The individual **random_personal_id** will be used as the **team_id** for this group. 
@@ -50,8 +50,8 @@ replace('%team_id%', $team_id);
 ```
 **Participant zero** has now a **team_id**, our team-unique and anonymous ID. Furthermore, every placehoalder %team_id% will be replaced by the true **team_id**. The email type question has a input field, where you can customize the email which will be send by the participants to their colleagues. Within this field, you can now use the following link.
 
-> ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.de/y<span>our_project/r=%team_id%<span>
-     
+> ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.com/y<span>our_project/r=%team_id%<span>
+    
 <br></br>
 The following participants, the collegues of **participant zero**, will receive this link via email. As their **r** is the **team_id** of the sender, they can be assigned to one group. If the receiver invites more colleagues, he will send the same link he received. As this goes on, every person in this chain can be assignet to the group they belong to, since **r = team_id**. 
 <br></br>
@@ -73,6 +73,6 @@ replace('%team_id%', $team_id);
 
 Additionally, put the following in the prepared email text of the email question type:
 ```
-https://www.soscisurvey.de/your_project/r=%team_id%
+https://www.soscisurvey.com/your_project/r=%team_id%
 ```
 
