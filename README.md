@@ -55,7 +55,7 @@ replace('%team_id%', $team_id);
 
 <br>The following participants, the collegues of **participant zero**, will receive this link via email. As their **r** is the **team_id** of the sender, they can be assigned to one group. If the receiver invites more colleagues, he will send the same link he received. As this goes on, every person in this chain can be assignet to the group they belong to, since **r = team_id**. 
 <br></br>
-Coming to our example: Now we know what the workers of each company think about their company(aggregated by team_id). However, we neither know who the participants are nor to which company they belong. Although the company name could be asked, too. And most importantly, the workers distributed the survey themselves. 
+Coming back to our example: Now we know what the workers of each company think about their company(aggregated by team_id). However, we neither know who the participants are nor to which company they belong. Although the company name could be asked, too. And most importantly, the workers distributed the survey themselves. 
 <br></br>
 
 ## How to use
