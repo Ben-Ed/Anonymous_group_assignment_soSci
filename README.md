@@ -39,7 +39,7 @@ In those cases where the participant is the first member of the group/project te
 
 > ht<span>tps://<span>ww<span>w.<span>soscisurvey.de/your_project<span>
     
-<br>
+<br></br>
 Which means, that there is no **team_id** yet for the group of **participant zero**. Therefore, we have to manually assign a **team_id**. The individual **random_personal_id** will be used as the **team_id** for this group. 
 
 ```php
@@ -52,7 +52,7 @@ replace('%team_id%', $team_id);
 
 > ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.de/y<span>our_project/r=%team_id%<span>
      
-<br>
+<br></br>
 The following participants, the collegues of **participant zero**, will receive this link via email. As their **r** is the **team_id** of the sender, they can be assigned to one group. If the receiver invites more colleagues, he will send the same link he received. As this goes on, every person in this chain can be assignet to the group they belong to, since **r = team_id**. 
 <br></br>
 Coming to our example: Now we know what the workers of each company think about their company(aggregated by team_id). However, we neither know who the participants are nor to which company they belong. Although the company name could be asked, too. And most importantly, the workers distributed the survey themselves. 
