@@ -38,6 +38,7 @@ $team_id = readGET('r');
 In those cases where the participant is the first member of the group/project team/company (or on whatever base you want to aggrate), there will be no **r** in the link. The link will look like this
 
 > ht<span>tps://<span>ww<span>w.<span>soscisurvey.de/your_project<span>
+    
 <br>
 Which means, that there is no **team_id** yet for the group of this participant. Therefore, we have to manually assign a **team_id**. The individual **random_personal_id** will be used as the **team_id** for this group. 
 
