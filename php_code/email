@@ -1,0 +1,5 @@
+//Within a question of the type "email to personal contact" (https://www.soscisurvey.de/help/doku.php/en:create:questions:email), the text to be send is customizable
+//Simply put the following link in the email
+//Don't forget to replace "your_project" with the actual project name
+
+https://www.soscisurvey.de/your_project/r=%team_id%
