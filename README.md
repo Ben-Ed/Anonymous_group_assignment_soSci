@@ -27,17 +27,18 @@ Remember the goals:
 > - Mantaining anomynous group assignment
 > - Using snowball technique to minimize effort
 
-This is the link the first partcipant of a group clicks on
-> ht<span>tps://<span>ww<span>w.<span>soscisurvey.de/your_project<span>
-
-This is the link each participant invites the following participants with
-> ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.de/y<span>our_project/r=%team_id%<span>
 <br></br>
   
 
 ![Alt-Text](https://github.com/Ben-Ed/Anonymous_team_assignment_soSci/blob/master/snowball_assignment.gif)
 
+<br></br>
 
+This is the link the first partcipant of a group clicks on
+> ht<span>tps://<span>ww<span>w.<span>soscisurvey.de/your_project<span>
+
+This is the link each participant invites the following participants with
+> ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.de/y<span>our_project/r=%team_id%<span>
 <br></br>
 
 ## How to use
