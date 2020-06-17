@@ -10,7 +10,7 @@ SoSci Survey is an online survey tool to conduct scientific researches. Its cust
 - Using snowball technique to minimize effort
 <br></br>
 
-In the following, I will explain how this is possible with a little bit of PHP code and soSci email function. Feel free to simply copy the code and paste it in your own soSci research project. Furthermore, put this in the email text. 
+In the following, I will explain how this is possible with a little bit of PHP code and soSci email function. Feel free to simply copy [the code](https://github.com/Ben-Ed/Anonymous_team_assignment_soSci/blob/master/php_code/assignment) and paste it in your own soSci research project. Furthermore, put [this](https://github.com/Ben-Ed/Anonymous_team_assignment_soSci/blob/master/php_code/email) in the email text. 
 <br></br>
 
 ## The problem
@@ -27,19 +27,47 @@ Remember the goals:
 > - Mantaining anomynous group assignment
 > - Using snowball technique to minimize effort
 
-Keep the following in mind: Every participant has a individual ID, which we call **random_personal_ID**, and you can mark survey links with a variable, which we call **r**. Also, soSci has an inbuild feature which let the participants enter email adresses of their collegues, thus sending a email containing the survey link to them. **These email adresses are not saved!**
-<br></br>
-  
+Keep the following in mind: Every participant has a individual ID, which we call **random_personal_ID**, and you can mark survey links with a variable, which we call **r**. This **r** will serve as the **team_id** .Also, soSci has an inbuild feature which let the participants enter email adresses of their collegues, thus sending a email containing the survey link to them. **These email adresses are not saved!**
 
 ![Alt-Text](https://github.com/Ben-Ed/Anonymous_team_assignment_soSci/blob/master/snowball_assignment.gif)
 
-<br></br>
+At the beginning, we check the link the participant used. 
+```php
+$team_id = readGET('r');
+```
+In those cases where the participant is the first member of the group/project team/company (or on whatever base you want to aggrate), there will be no **r** in the link. The link will look like this
 
-This is the link the first partcipant of a group clicks on
 > ht<span>tps://<span>ww<span>w.<span>soscisurvey.de/your_project<span>
 
+Which means, that there is no **team_id** yet for the group of this participant. Therefore, we have to manually assign a **team_id**. The individual **random_personal_id** will be used as the **team_id** for this group. 
+
+```php
+if ($team_id == NULL) {
+    $team_id = caseNumber();
+}
+```
+
+<br>
 This is the link each participant invites the following participants with
 > ht<span>tps://ww<span>w.s<span>oscisu<span>rvey.de/y<span>our_project/r=%team_id%<span>
 <br></br>
 
 ## How to use
+
+Simply copy the following code into a php block within your soSci survey. There is also a commented version with explanations and further debugging options, if needed.
+
+```php
+$team_id = readGET('r');
+
+if ($team_id == NULL) {
+    $team_id = caseNumber();
+}
+
+replace('%team_id%', $team_id);
+```
+
+Additionally, put the following in the prepared email text of the email question type:
+```
+https://www.soscisurvey.de/your_project/r=%team_id%
+```
+
