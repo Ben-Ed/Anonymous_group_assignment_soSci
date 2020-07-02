@@ -60,7 +60,7 @@ Coming back to our example: Now we know what the workers of each company think a
 
 ## How to use
 
-Simply copy the following code into a php block within your soSci survey. There is also a commented version with explanations and further debugging options, if needed.
+Simply copy the following code into a php block within your soSci survey. There is also a commented version with explanations and further debugging options, if needed. Important: The php block needs to be on the first side!
 
 ```PHP
 $team_id = readGET('r');
